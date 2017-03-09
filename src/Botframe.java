@@ -1,9 +1,9 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Arrays;
-
 import javax.swing.*;
 import javax.swing.GroupLayout.Alignment;
+
 public class Botframe extends javax.swing.JFrame implements ActionListener{
     /** Creates new form Botframe */
     public int flag;
@@ -39,8 +39,7 @@ public class Botframe extends javax.swing.JFrame implements ActionListener{
     * Starts the GUI components of this bot
     */
     public void ShowComponents() {
-    // TODO Auto-generated method stub
-	 java.awt.EventQueue.invokeLater(new Runnable() {
+   	 java.awt.EventQueue.invokeLater(new Runnable() {
          public void run() {
                 new Botframe();
             }
@@ -49,8 +48,7 @@ public class Botframe extends javax.swing.JFrame implements ActionListener{
 	
     @Override
     public void actionPerformed(ActionEvent e) {
-    // TODO Auto-generated method stub
-	if (e.getSource() == statusButton) {
+   	if (e.getSource() == statusButton) {
 		String line = ChatLog.getText();
 		String[] words = {"System", "infected","affected","properties","host","system"};  
 	        String s = line;
